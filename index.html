@@ -7,14 +7,72 @@
   <!-- Tailwind CSS and DaisyUI -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+
+
+  <style>
+    .font-manrope {
+        font-family: 'Manrope', sans-serif;
+    }
+</style>
   <title>Hockeys</title>
 
 </head>
 
-<body>
-
   <!-- Header Section -->
-  <header>
+    <body class="Manrope">
+
+      <header>
+        <!-- Navbar -->
+        <div class="navbar bg-slate-200">
+          <div class="navbar-start">
+         
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a class="font-semibold text-red-600">Home</a></li>
+                <li><a class="font-semibold">About</a></li>
+                <li><a class="font-semibold">Pages</a></li>
+                <li><a class="font-semibold">Blog</a></li>
+                <li><a class="font-semibold">Contact</a></li>
+                <div class="form-control">
+                  <input type="text" placeholder="Search" class="input input-bordered w-full p-2 lg:w-auto" />
+                </div>
+              </ul>
+            </div>
+            <!-- Main Logo -->
+            <a class="btn btn-ghost text-xl">Hockey <em class="text-[#FF4240]">’s</em></a>
+          </div>
+    
+          
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-red-600 font-semibold">Home</a></li>
+              <li><a class="font-semibold">About</a></li>
+              <li><a class="font-semibold">Pages</a></li>
+              <li><a class="font-semibold">Blog</a></li>
+              <li><a class="font-semibold">Contact</a></li>
+            </ul>
+          </div>
+    
+          <!-- Navbar End -->
+          <div class="navbar-end gap-3">
+            
+            <div class="form-control hidden lg:flex">
+              <input type="text" placeholder="Search" class="input input-bordered w-20 lg:w-auto" />
+            </div>
+            <!-- Get Ticket Button -->
+            <a class="btn border-none bg-[#FF4240] text-white">Get Ticket</a>
+          </div>
+        </div>
+    
     <section class="banner mt-4">
       <div class="carousel w-full">
         <!-- Carousel Items -->
@@ -286,10 +344,8 @@
 
     </form>
    </div>
-   
-  </div>
-</section>
 
+  
 </main>
 
 <!-- Footer Section -->
